@@ -1,27 +1,18 @@
 
 module.exports = function chunk (collection, size) {
     
-    var result = [],
-        chunky = [];
+    var result = [];
     
     // default size to two item
     size = parseInt(size) || 2;
     
-    // step over the input collection
-    for (var x = 0; x < collection.length; x += size) {
+    // add each chunk to the result
+    for (var x = 0; x < Math.ceil(collection.length / size); x++) {
         
-        // add this item to the chunk
-        chunky.push(collection[x]);
+        var start = x * size,
+            end = start + size;
         
-        if (chunky.length === size) {
-            
-            // push the chunk to the result if needed
-            result.push(chunky);
-            
-            // reset the chunk
-            chunky = [];
-            
-        }
+        result.push(collection.slice(start, end));
         
     }
     
