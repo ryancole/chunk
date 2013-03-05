@@ -1,0 +1,15 @@
+{
+    "name": "chunk",
+    "version": "0.0.1",
+    "description": "Chunk converts arrays like `[1,2,3,4,5]` into arrays of arrays like `[[1,2], [3,4], [5]]`.",
+    "main": "src/chunk.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/ryancole/chunk.git"
+    },
+    "keywords": ["array", "chunk"],
+    "author": "Ryan Cole",
+    "license": "BSD",
+    "readmeFilename": "readme.md",
+    "gitHead": "b6ad5fb1ccdb5963e168b707c7d9e793fc9c2071"
+}
