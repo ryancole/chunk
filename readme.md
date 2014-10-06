@@ -2,10 +2,16 @@ Chunk converts arrays like `[1,2,3,4,5]` into arrays of arrays like `[[1,2], [3,
 
 ![Chunk, from The Goonies](http://i.imgur.com/T3WCUmu.jpg "Chunk, from The Goonies")
 
-You can install chunk using npm.
+You can install chunk using npm ...
 
 ```
 npm install chunk
+```
+
+or bower ...
+
+```
+bower install chunk
 ```
 
 ## Examples
