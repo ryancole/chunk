@@ -39,4 +39,26 @@ describe('chunk', function () {
 
     });
 
+    it('should generate two chunks of seven and one', function (done) {
+        
+        var result = chunk([1,2,3,4,5,6,7,8], 7);
+
+        result.should.be.ok;
+        result.should.eql([[1,2,3,4,5,6,7], [8]]);
+
+        return done();
+        
+    });
+
+    it('should generate one chunk', function (done) {
+        
+        var result = chunk([1,2,3,4,5,6,7,8], 8);
+
+        result.should.be.ok;
+        result.should.eql([[1,2,3,4,5,6,7,8]]);
+
+        return done();
+        
+    });
+
 });
