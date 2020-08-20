@@ -1,11 +1,5 @@
-![Node.js CI](https://github.com/gordey4doronin/chunk/workflows/Node.js%20CI/badge.svg)
-![Node.js CI](https://github.com/gordey4doronin/chunk/workflows/Node.js%20CI/badge.svg?branch=feature%2Fci)
-
-![Node.js CD](https://github.com/gordey4doronin/chunk/workflows/Node.js%20CD/badge.svg)
-![Node.js CD](https://github.com/gordey4doronin/chunk/workflows/Node.js%20CD/badge.svg?branch=feature%2Fci)
-
-![Node.js CD](https://github.com/gordey4doronin/chunk/workflows/Node.js%20CD/badge.svg?event=release)
-![Node.js CD](https://github.com/gordey4doronin/chunk/workflows/Node.js%20CD/badge.svg?branch=feature%2Fci&event=release)
+![Build](https://github.com/gordey4doronin/chunk/workflows/Node.js%20CI/badge.svg)
+![Release](https://github.com/gordey4doronin/chunk/workflows/Node.js%20CD/badge.svg?event=release)
 
 Chunk converts arrays like `[1,2,3,4,5]` into arrays of arrays like `[[1,2], [3,4], [5]]`.
 
