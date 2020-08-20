@@ -1,5 +1,5 @@
-![Build](https://github.com/gordey4doronin/chunk/workflows/Node.js%20CI/badge.svg)
-![Release](https://github.com/gordey4doronin/chunk/workflows/Node.js%20CD/badge.svg?event=release)
+![Build](https://github.com/gordey4doronin/chunk/workflows/Build/badge.svg)
+![Release](https://github.com/gordey4doronin/chunk/workflows/Release/badge.svg)
 
 Chunk converts arrays like `[1,2,3,4,5]` into arrays of arrays like `[[1,2], [3,4], [5]]`.
 
