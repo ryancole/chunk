@@ -1,5 +1,5 @@
-![Build](https://github.com/gordey4doronin/chunk/workflows/Build/badge.svg)
-![Release](https://github.com/gordey4doronin/chunk/workflows/Release/badge.svg)
+![Build](https://github.com/ryancole/chunk/workflows/Build/badge.svg)
+![Release](https://github.com/ryancole/chunk/workflows/Release/badge.svg)
 
 Chunk converts arrays like `[1,2,3,4,5]` into arrays of arrays like `[[1,2], [3,4], [5]]`.
 
