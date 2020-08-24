@@ -1,6 +1,6 @@
 {
   "name": "chunk",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "description": "Chunk converts arrays like `[1,2,3,4,5]` into arrays of arrays like `[[1,2], [3,4], [5]]`.",
   "main": "src/chunk.js",
   "repository": {
@@ -14,9 +14,9 @@
   "author": "Ryan Cole",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^8.1.1",
+    "mocha": "^1.21.4",
     "prettier": "^2.0.5",
-    "should": "^13.2.3"
+    "should": "^4.0.4"
   },
   "scripts": {
     "test": "mocha --reporter spec test/tests.js"
