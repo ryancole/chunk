@@ -14,9 +14,9 @@
   "author": "Ryan Cole",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^1.21.4",
+    "mocha": "^8.1.1",
     "prettier": "^2.0.5",
-    "should": "^4.0.4"
+    "should": "^13.2.3"
   },
   "scripts": {
     "test": "mocha --reporter spec test/tests.js"
