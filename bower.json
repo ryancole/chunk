@@ -1,26 +1,12 @@
 {
   "name": "chunk",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/ryancole/chunk",
-  "authors": [
-    "Ryan Cole <ryan@rycole.com>"
-  ],
+  "authors": ["Ryan Cole <ryan@rycole.com>"],
   "description": "Chunk converts arrays like `[1,2,3,4,5]` into arrays of arrays like `[[1,2], [3,4], [5]]`.",
   "main": "src/chunk.js",
-  "moduleType": [
-    "globals",
-    "node"
-  ],
-  "keywords": [
-    "array",
-    "chunk"
-  ],
+  "moduleType": ["globals", "node"],
+  "keywords": ["array", "chunk"],
   "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+  "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"]
 }
