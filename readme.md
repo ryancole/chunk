@@ -1,3 +1,6 @@
+![Build](https://github.com/ryancole/chunk/workflows/Build/badge.svg)
+![Release](https://github.com/ryancole/chunk/workflows/Release/badge.svg)
+
 Chunk converts arrays like `[1,2,3,4,5]` into arrays of arrays like `[[1,2], [3,4], [5]]`.
 
 ![Chunk, from The Goonies](http://i.imgur.com/T3WCUmu.jpg "Chunk, from The Goonies")
