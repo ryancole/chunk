@@ -1,64 +1,58 @@
+var should = require("should");
 
-var should = require('should');
+describe("chunk", function () {
+  var chunk = require("..");
 
+  it("should generate four chunks of two", function (done) {
+    var result = chunk([1, 2, 3, 4, 5, 6, 7, 8]);
 
-describe('chunk', function () {
-    
-    var chunk = require('..');
-    
-    it('should generate four chunks of two', function (done) {
-        
-        var result = chunk([1,2,3,4,5,6,7,8]);
+    result.should.be.ok;
+    result.should.eql([
+      [1, 2],
+      [3, 4],
+      [5, 6],
+      [7, 8]
+    ]);
 
-        result.should.be.ok;
-        result.should.eql([[1,2], [3,4], [5,6], [7,8]]);
+    return done();
+  });
 
-        return done();
-        
-    });
+  it("should generate two chunks of four", function (done) {
+    var result = chunk([1, 2, 3, 4, 5, 6, 7, 8], 4);
 
-    it('should generate two chunks of four', function (done) {
+    result.should.be.ok;
+    result.should.eql([
+      [1, 2, 3, 4],
+      [5, 6, 7, 8]
+    ]);
 
-        var result = chunk([1,2,3,4,5,6,7,8], 4);
+    return done();
+  });
 
-        result.should.be.ok;
-        result.should.eql([[1,2,3,4], [5,6,7,8]]);
+  it("should generate eight chunks of one", function (done) {
+    var result = chunk([1, 2, 3, 4, 5, 6, 7, 8], 1);
 
-        return done();
+    result.should.be.ok;
+    result.should.eql([[1], [2], [3], [4], [5], [6], [7], [8]]);
 
-    });
-    
-    it('should generate eight chunks of one', function (done) {
+    return done();
+  });
 
-        var result = chunk([1,2,3,4,5,6,7,8], 1);
+  it("should generate two chunks of seven and one", function (done) {
+    var result = chunk([1, 2, 3, 4, 5, 6, 7, 8], 7);
 
-        result.should.be.ok;
-        result.should.eql([[1],[2],[3],[4],[5],[6],[7],[8]]);
+    result.should.be.ok;
+    result.should.eql([[1, 2, 3, 4, 5, 6, 7], [8]]);
 
-        return done();
+    return done();
+  });
 
-    });
+  it("should generate one chunk", function (done) {
+    var result = chunk([1, 2, 3, 4, 5, 6, 7, 8], 8);
 
-    it('should generate two chunks of seven and one', function (done) {
-        
-        var result = chunk([1,2,3,4,5,6,7,8], 7);
+    result.should.be.ok;
+    result.should.eql([[1, 2, 3, 4, 5, 6, 7, 8]]);
 
-        result.should.be.ok;
-        result.should.eql([[1,2,3,4,5,6,7], [8]]);
-
-        return done();
-        
-    });
-
-    it('should generate one chunk', function (done) {
-        
-        var result = chunk([1,2,3,4,5,6,7,8], 8);
-
-        result.should.be.ok;
-        result.should.eql([[1,2,3,4,5,6,7,8]]);
-
-        return done();
-        
-    });
-
+    return done();
+  });
 });

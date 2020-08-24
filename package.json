@@ -14,10 +14,11 @@
   "author": "Ryan Cole",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^1.21.4",
-    "should": "^4.0.4"
+    "mocha": "^8.1.1",
+    "prettier": "^2.0.5",
+    "should": "^13.2.3"
   },
   "scripts": {
-    "test": "mocha --reporter spec --timeout 10000 test/tests.js"
+    "test": "mocha --reporter spec test/tests.js"
   }
 }
